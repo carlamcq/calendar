@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="https://artwork.neocities.org/pixels/kaoanis/blobpaint.gif">
 <title>DSG1500</title>
 <script>
   (function(d) {
@@ -61,7 +62,7 @@
   }
   .sub{
     color:var(--ink-soft);
-    font-size:13px;
+    font-size:14px;
     margin:0 0 6px;
   }
   .status{
@@ -106,37 +107,22 @@
     background:transparent;
     font-family: "europa", sans-serif;
     font-weight:600;
-    font-size:13px;
+    font-size:16px;
     color:var(--ink);
     width:110px;
     outline:none;
   }
-  .hint{
-    font-size:11.5px;
-    color:var(--ink-soft);
-    background:var(--panel);
-    border:1px dashed var(--line);
-    border-radius:8px;
-    padding:8px 12px;
-    margin-bottom:20px;
-    line-height:1.5;
-  }
-  .hint b{color:var(--ink);}
-  table{
-    border-collapse:separate;
-    border-spacing:4px;
-    width:100%;
-  }
+
   th{
     font-family: "europa", sans-serif;
     font-weight:600;
-    font-size:13px;
+    font-size:18px;
     color:var(--ink);
     padding:6px 4px;
     text-align:center;
   }
   td.hourlabel{
-    font-size:11px;
+    font-size:16px;
     color:var(--ink-soft);
     text-align:right;
     padding-right:8px;
@@ -175,7 +161,7 @@
   .seg.busy.u3{background:var(--u4);}
   .seg.free{background:rgba(0,0,0,0.05);}
   .freecount{
-    font-size:10.5px;
+    font-size:14px;
     font-weight:600;
     text-align:center;
     color:var(--ink);
@@ -203,7 +189,7 @@
   }
   .summary h2{
     font-family: "europa", sans-serif;
-    font-size:14px;
+    font-size:20px;
     margin:0 0 10px;
   }
   #free-list{
@@ -211,7 +197,7 @@
     line-height:1.9;
     color:var(--ink);
   }
-  #free-list .slot{color:var(--ink-soft);}
+  #free-list .slot{color:var(--ink-soft);font-size: 16px;}
   #free-list .names{font-weight:600;}
   .toolbar{
     display:flex;
@@ -244,10 +230,6 @@
   <div class="status" id="status"><span class="light"></span><span id="status-text">conectando…</span></div>
 
   <div class="users" id="users"></div>
-
-  <div class="hint">
-    Cada célula tem <b>4 barrinhas</b>, uma por pessoa, na mesma ordem dos nomes acima. Clique numa barrinha para marcar/desmarcar como <b>ocupado</b>. As mudanças são salvas na nuvem e aparecem em tempo real pra quem mais tiver essa página aberta.
-  </div>
 
   <table id="grid"></table>
 
