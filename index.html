@@ -3,20 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Disponibilidade da equipe</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<title>DSG1500</title>
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'fov2rtz',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
 <style>
   :root{
     --bg: #F5F3EE;
     --panel: #FFFFFF;
-    --ink: #22261F;
+    --ink: #4c2e55;
     --ink-soft: #6B6F64;
     --line: #E1DED4;
-    --u1: #3B5BDB;
-    --u2: #E8590C;
-    --u3: #0CA678;
-    --u4: #9C36B5;
+    --u1: #812c54;
+    --u2: #8c719f;
+    --u3: #4a617d;
+    --u4: #7094af;
     --free-4: #1B8E5A;
     --free-3: #6FB86B;
     --free-2: #F2CB6B;
@@ -28,14 +36,17 @@
     margin:0;
     background:var(--bg);
     color:var(--ink);
-    font-family:'IBM Plex Mono', monospace;
+    font-family: "callifont-daynote-brush", sans-serif;
+    font-weight: 500;
+    font-style: normal;
     padding:28px 20px 60px;
   }
   h1{
-    font-family:'Space Grotesk', sans-serif;
+    font-family: "callifont-daynote-brush", sans-serif;
     font-size:22px;
-    font-weight:700;
-    margin:0 0 2px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 0 0 2px;
     letter-spacing:-0.01em;
   }
   .sub{
@@ -265,10 +276,10 @@ const USER_CLASSES = ["u0","u1","u2","u3"];
 
 let state = {
   users: [
-    {name:"Ana",   color:"var(--u1)"},
-    {name:"Bruno", color:"var(--u2)"},
+    {name:"Clara",   color:"var(--u1)"},
+    {name:"Gabi", color:"var(--u2)"},
     {name:"Carla", color:"var(--u3)"},
-    {name:"Gabi",  color:"var(--u4)"}
+    {name:"Sarah",  color:"var(--u4)"}
   ],
   busy: {}
 };
