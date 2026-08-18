@@ -14,6 +14,16 @@
     h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
   })(document);
 </script>
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'fov2rtz',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
 <style>
   :root{
     --bg: #F5F3EE;
@@ -21,9 +31,9 @@
     --ink: #4c2e55;
     --ink-soft: #6B6F64;
     --line: #E1DED4;
-    --u1: #812c54;
+    --u1: #4a617d;
     --u2: #8c719f;
-    --u3: #4a617d;
+    --u3: #812c54;
     --u4: #7094af;
     --free-4: #1B8E5A;
     --free-3: #6FB86B;
@@ -36,14 +46,14 @@
     margin:0;
     background:var(--bg);
     color:var(--ink);
-    font-family: "callifont-daynote-brush", sans-serif;
+    font-family: "europa", sans-serif;
     font-weight: 500;
     font-style: normal;
     padding:28px 20px 60px;
   }
   h1{
     font-family: "callifont-daynote-brush", sans-serif;
-    font-size:22px;
+    font-size: 64px;
     font-style: normal;
     font-weight: 700;
     margin: 0 0 2px;
@@ -94,7 +104,7 @@
   .user-chip input{
     border:none;
     background:transparent;
-    font-family:'Space Grotesk', sans-serif;
+    font-family: "europa", sans-serif;
     font-weight:600;
     font-size:13px;
     color:var(--ink);
@@ -118,7 +128,7 @@
     width:100%;
   }
   th{
-    font-family:'Space Grotesk', sans-serif;
+    font-family: "europa", sans-serif;
     font-weight:600;
     font-size:13px;
     color:var(--ink);
@@ -192,7 +202,7 @@
     padding:16px 18px;
   }
   .summary h2{
-    font-family:'Space Grotesk', sans-serif;
+    font-family: "europa", sans-serif;
     font-size:14px;
     margin:0 0 10px;
   }
@@ -209,7 +219,7 @@
     margin:16px 0 0;
   }
   button.tool{
-    font-family:'IBM Plex Mono', monospace;
+    font-family: "europa", sans-serif;
     font-size:11.5px;
     background:var(--panel);
     border:1.5px solid var(--line);
